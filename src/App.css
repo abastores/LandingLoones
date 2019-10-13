@@ -1,5 +1,11 @@
+@import '~antd/dist/antd.css';
+
 .App {
   text-align: center;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
 }
 
 .App-logo {
@@ -19,4 +25,32 @@
 
 .App-link {
   color: #09d3ac;
+}
+
+.container-link {
+  width: 100%;
+  min-height: 30vh;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Background Colors */
+.blue-background {
+  background: rgba(0,160,233,0.7);
+}
+
+.green-background {
+  background: rgba(81, 214, 87, 0.7);
+}
+
+.grey-background {
+  background: rgba(112, 114, 121, 0.7);
+}
+
+/* Ant Design - Style Overrides */
+h1.ant-typography,
+h2.ant-typography,
+h3.ant-typography {
+  color: white;
 }
