@@ -29,28 +29,63 @@
 
 .container-link {
   width: 100%;
-  min-height: 30vh;
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  transition: box-shadow .3s;
+}
+
+.container-link:hover {
+  box-shadow: 0 0 11px rgba(0, 0, 0, 0.4); 
 }
 
 /* Background Colors */
 .blue-background {
   background: rgba(0,160,233,0.7);
+  min-height: 30vh;
 }
 
 .green-background {
   background: rgba(81, 214, 87, 0.7);
+  min-height: 30vh;
 }
 
 .grey-background {
   background: rgba(112, 114, 121, 0.7);
+  min-height: 15vh;
+  margin-top: 16px;
 }
 
 /* Ant Design - Style Overrides */
 h1.ant-typography,
-h2.ant-typography,
-h3.ant-typography {
+h2.ant-typography {
   color: white;
 }
+
+h1.ant-typography {
+  font-weight: 900;
+  font-size: 40px;
+  margin-top: 5%;
+}
+
+/* Media Queries */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  h1.ant-typography {
+    font-weight: 900;
+    font-size: 80px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
