@@ -5,14 +5,28 @@ import './App.css';
 
 class App extends Component {
   render() {
+
+    // Components
     const { Title } = Typography;
+
+    // Labels    
+    const TITLE = "LA LONJA ONLINE ESPAÑOLA"
+    const SUBTITLE = "Compra y vende productos agrícolas sin intermediarios"
+    const VIEW_OFFERS = "Ver ofertas"
+    const OFFER_PRODUCT = "Ofrecer producto"
+    const MARKETDATA_LABEL =  "Precios de lonja"
+
+    // Links
+    const VIEW_OFFER_LINK = "https://coop.loones.es/es/iniciar-sesion?create_account=1"
+    const OFFER_PRODUCT_LINK = "https://coop.loones.es/es/module/agilemultipleseller/sellersignup"
+    const MARKETDATA_LINK = "https://marketdata.loones.es/"
 
     return (
       <div className="App" style={{ backgroundImage: `url(${background})` }}>
         <Row>
           <Col span={24}>
-            <Title className="title">LA LONJA ONLINE ESPAÑOLA</Title>
-            <Title level={2}>Compra y vende productos agrícolas sin intermediarios</Title>
+            <Title className="title">{ TITLE }</Title>
+            <Title level={2}>{ SUBTITLE }</Title>
           </Col>
         </Row>
         <Row>
@@ -20,25 +34,25 @@ class App extends Component {
           <Col xs={20} md={16} lg={8}>
             <Row type="flex" justify="center" gutter={16} >
               <Col span={12}>
-                <a href="https://www.google.es/">
+                <a href={ VIEW_OFFER_LINK }>
                   <div className="container-link blue-background">
-                    <Title level={2}>Ver ofertas</Title>
+                    <Title level={2}>{ VIEW_OFFERS }</Title>
                   </div>
                 </a>
               </Col>
               <Col span={12}>
-                <a href="https://www.google.es/">
+                <a href={ OFFER_PRODUCT_LINK }>
                   <div className="container-link green-background" >
-                    <Title level={2}>Ofrecer producto</Title>
+                    <Title level={2}>{ OFFER_PRODUCT }</Title>
                   </div>
                 </a>
               </Col>
             </Row>
             <Row type="flex" justify="center">
               <Col xs={24} lg={24}>
-                <a href="https://www.google.es/">
+                <a href={ MARKETDATA_LINK }>
                   <div className="container-link grey-background">
-                    <Title level={2}>Precios de lonja</Title>
+                    <Title level={2}>{ MARKETDATA_LABEL }</Title>
                   </div>
                 </a>
               </Col>

@@ -36,24 +36,32 @@
   transition: box-shadow .3s;
 }
 
+.container-link h2 {
+  font-weight: 300;
+}
+
 .container-link:hover {
-  box-shadow: 0 0 11px rgba(0, 0, 0, 0.4); 
+  box-shadow: 0 0 11px rgba(0, 0, 0, 0.4);
+}
+
+.container-link:hover h2 {
+  font-weight: 900;
 }
 
 /* Background Colors */
 .blue-background {
-  background: rgba(0,160,233,0.7);
+  background: rgb(51, 89, 165, 0.75);  /* Primary Color: #3359A5 */
   min-height: 30vh;
 }
 
 .green-background {
-  background: rgba(81, 214, 87, 0.7);
+  background: rgb(149, 255, 103, 0.75);  /* Secondary Light Color: #95FF67 */
   min-height: 30vh;
 }
 
 .grey-background {
-  background: rgba(112, 114, 121, 0.7);
-  min-height: 15vh;
+  background: rgb(151, 151, 151, 0.75);  /* Grey Color: #979797 */
+  min-height: 13vh;
   margin-top: 16px;
 }
 
