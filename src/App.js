@@ -16,9 +16,12 @@ class App extends Component {
     const OFFER_PRODUCT = "Ofrecer producto"
     const MARKETDATA_LABEL =  "Precios de lonja"
 
+    // Domain
+    const DOMAIN = "https://coop.loones.es/es/"
+
     // Links
-    const VIEW_OFFER_LINK = "https://coop.loones.es/es/iniciar-sesion?create_account=1"
-    const OFFER_PRODUCT_LINK = "https://coop.loones.es/es/module/agilemultipleseller/sellersignup"
+    const VIEW_OFFER_LINK = `${DOMAIN}iniciar-sesion?create_account=1`
+    const OFFER_PRODUCT_LINK = `${DOMAIN}module/agilemultipleseller/sellersignup`
     const MARKETDATA_LINK = "https://marketdata.loones.es/"
 
     return (
