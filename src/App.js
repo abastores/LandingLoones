@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Typography, Row, Col } from 'antd';
-import background from './images/background.jpg'
+import background from './images/backgrounds/bg_farmers.jpg'
+import logo_footer from './images/logos/logo loones_3.png'
 import './App.css';
 
 class App extends Component {
@@ -15,6 +16,8 @@ class App extends Component {
     const VIEW_OFFERS = "Ver ofertas"
     const OFFER_PRODUCT = "Ofrecer producto"
     const MARKETDATA_LABEL =  "Precios de lonja"
+    const EXIST_ACCOUNT_LABEL = "¿Ya tienes cuenta?"
+    const SIG_IN_LABEL = "Inicia sesión"
 
     // Domain
     const DOMAIN = "https://coop.loones.es/es/"
@@ -22,6 +25,7 @@ class App extends Component {
     // Links
     const VIEW_OFFER_LINK = `${DOMAIN}iniciar-sesion?create_account=1`
     const OFFER_PRODUCT_LINK = `${DOMAIN}module/agilemultipleseller/sellersignup`
+    const SIGN_IN_LINK = `${ DOMAIN }iniciar-sesion`
     const MARKETDATA_LINK = "https://marketdata.loones.es/"
 
     return (
@@ -60,8 +64,22 @@ class App extends Component {
                 </a>
               </Col>
             </Row>
+            <Row type="flex" justify="center">
+              <Col xs={24} lg={24} className="sign-in">
+                <Title level={4}> { EXIST_ACCOUNT_LABEL } <a href={ SIGN_IN_LINK } className="sign-in-link">{ SIG_IN_LABEL }</a></Title>
+              </Col>
+            </Row>
           </Col>
           <Col xs={2} md={4} lg={8}></Col>
+        </Row>
+        <Row>
+          <Col span={24}>
+            <div>
+              <a href={ DOMAIN }>
+              <img width="140" height="170" src={ logo_footer } alt="loones_logo"></img>
+              </a>
+            </div>
+          </Col>
         </Row>
       </div>
     );

@@ -1,5 +1,18 @@
 @import '~antd/dist/antd.css';
 
+@font-face{
+  font-family:"cocogoose-regular";
+  src:local("./fonts/cocogoose/Cocogoose\ Pro-trial.ttf") format("woff"),
+  local("./fonts/cocogoose/Cocogoose\ Pro-trial.ttf") format("opentype"),
+  local("./fonts/cocogoose/Cocogoose\ Pro-trial.ttf") format("truetype");
+}
+
+body {
+  font-family:"cocogoose-regular", Fallback, sans-serif;
+  font-size:40px;
+  text-transform:none;
+}
+
 .App {
   text-align: center;
   height: 100vh;
@@ -37,7 +50,7 @@
 }
 
 .container-link h2 {
-  font-weight: 300;
+  font-weight: 900;
 }
 
 .container-link:hover {
@@ -45,7 +58,7 @@
 }
 
 .container-link:hover h2 {
-  font-weight: 900;
+  font-weight: 300;
 }
 
 /* Background Colors */
@@ -65,16 +78,34 @@
   margin-top: 16px;
 }
 
+/* Sign In Styling */
+.sign-in {
+  margin-top: 16px;
+}
+
 /* Ant Design - Style Overrides */
 h1.ant-typography,
-h2.ant-typography {
+h2.ant-typography,
+h4.ant-typography {
   color: white;
 }
 
 h1.ant-typography {
   font-weight: 900;
-  font-size: 40px;
+  font-size: 25px;
   margin-top: 5%;
+}
+
+h2.ant-typography {
+  font-size: 15px;
+}
+
+h4.ant-typography {
+  font-size: 10px;
+}
+
+.ant-typography a {
+  text-decoration: underline;
 }
 
 /* Media Queries */
@@ -82,12 +113,7 @@ h1.ant-typography {
 @media only screen and (max-width: 600px) {}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  h1.ant-typography {
-    font-weight: 900;
-    font-size: 80px;
-  }
-}
+@media only screen and (min-width: 600px) {}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {}
@@ -96,4 +122,17 @@ h1.ant-typography {
 @media only screen and (min-width: 992px) {}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+  h1.ant-typography {
+    font-weight: 900;
+    font-size: 80px;
+  }
+
+  h2.ant-typography {
+    font-size: 30px;
+  }
+
+  h4.ant-typography {
+    font-size: 20px;
+  }
+}
