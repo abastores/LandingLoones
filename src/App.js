@@ -20,7 +20,7 @@ class App extends Component {
     const SIG_IN_LABEL = "Inicia sesión"
 
     // Domain
-    const DOMAIN = "https://coop.loones.es/es/"
+    const DOMAIN = "https://coop.loones.es/"
 
     // Links
     const VIEW_OFFER_LINK = `${DOMAIN}iniciar-sesion?create_account=1`
