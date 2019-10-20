@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Typography, Row, Col } from 'antd';
-import background from './images/backgrounds/bg_farmers.jpg'
-import logo_footer from './images/logos/logo loones_3.png'
+import background from './assets/images/backgrounds/bg_farmers.jpg'
+import logo_footer from './assets/images/logos/logo loones_3.png'
 import './App.css';
 
 class App extends Component {
