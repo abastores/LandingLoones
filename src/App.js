@@ -20,7 +20,7 @@ class App extends Component {
     const SIG_IN_LABEL = "Inicia sesión"
 
     // Domain
-    const DOMAIN = "https://coop.loones.es/"
+    const DOMAIN = "https://loones.es/"
 
     // Links
     const VIEW_OFFER_LINK = `${DOMAIN}iniciar-sesion?create_account=1`
@@ -76,7 +76,7 @@ class App extends Component {
           <Col span={24}>
             <div>
               <a href={ DOMAIN }>
-              <img width="140" height="170" src={ logo_footer } alt="loones_logo"></img>
+              <img width="15%" height="15%" src={ logo_footer } alt="loones_logo"></img>
               </a>
             </div>
           </Col>
