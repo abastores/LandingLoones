@@ -76,7 +76,7 @@ class App extends Component {
           <Col span={24}>
             <div>
               <a href={ DOMAIN }>
-              <img width="15%" height="15%" src={ logo_footer } alt="loones_logo"></img>
+              <img src={ logo_footer } alt="loones_logo"></img>
               </a>
             </div>
           </Col>
