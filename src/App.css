@@ -1,14 +1,14 @@
 @import '~antd/dist/antd.css';
 
 @font-face{
-  font-family:"cocogoose-regular";
+  font-family:"cocogoose";
   src:url("./assets/fonts/cocogoose/Cocogoose_Pro_Semilight-trial.ttf") format("woff"),
   url("./assets/fonts/cocogoose/Cocogoose_Pro_Semilight-trial.ttf") format("opentype"),
   url("./assets/fonts/cocogoose/Cocogoose_Pro_Semilight-trial.ttf") format("truetype");
 }
 
 body {
-  font-family:"cocogoose-regular";
+  font-family:"cocogoose";
   font-size:40px;
   text-transform:none;
 }
